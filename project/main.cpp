@@ -7,7 +7,7 @@ int gcd(int a,int b){
         a=b;
         b=remain;
     }
-    cout<<a;
+    return a;
 }
 
 int lcm(int a,int b){
