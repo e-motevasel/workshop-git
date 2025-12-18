@@ -52,3 +52,26 @@ double Mul(double arr[],int size)
 
     return MULL;
 }
+#include <iostream>
+#include <cmath>
+using namespace std;
+void Solver(double a,double b,double c)
+{ double x1;
+    double x2;
+    double delta;
+    if(a==0)
+    {x1=(-c)/b;cout<<x1<<endl;}
+    else
+    {
+        delta = (b*b)-(4*a*c);
+        if(delta < 0)
+        cout<<"Impossible"<<endl;
+        else
+        {
+            x1 = ((-b)+(sqrt(delta)))/(2*a);
+            x2 = ((-b)-(sqrt(delta)))/(2*a);
+             cout<<x1<<endl<<x2<<endl;
+
+        }
+     }
+}
